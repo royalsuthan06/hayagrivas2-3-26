@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Online Exam | Hayagrivas</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="news-bar">
+      <div class="news-track">
+        <span
+          >📢 🏆 100% CBSE Results | CBSE Affiliation No: 1930677 | ISA Award
+          School &nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span
+          >📢 🏆 100% CBSE Results | CBSE Affiliation No: 1930677 | ISA Award
+          School &nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+      </div>
+    </div>
+
+    <header class="navbar sticky-nav">
+      <div class="nav-container centered-nav">
+        <nav class="nav-menu">
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Online Exam Portal</h2>
+
+      <div
+        class="card"
+        style="max-width: 600px; margin: auto; text-align: left"
+      >
+        <h3>Maths Test - Grade 10</h3>
+
+        <p>1️⃣ What is 25 × 4 ?</p>
+        <input type="text" class="input" />
+
+        <p>2️⃣ Solve: 2x + 5 = 15</p>
+        <input type="text" class="input" />
+
+        <p>3️⃣ Square root of 144?</p>
+        <input type="text" class="input" />
+
+        <button class="btn" style="width: 100%; margin-top: 20px">
+          Submit Test
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.6819253698877!2d77.75937!3d9.129166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0612234b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sHayagrivas%20International%20School!5e0!3m2!1sen!2sin!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="footer-details">
+        <p>© 2026 Hayagrivas International School | Sivakasi</p>
+        <p>📞 +91 73737 44882 | ✉ admin@hayagrivascbse.com</p>
+        <div
+          style="
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+          "
+        >
+          <a href="#" title="Facebook" style="font-size: 24px">f</a>
+          <a href="#" title="Instagram" style="font-size: 24px">📷</a>
+          <a
+            href="https://youtube.com/@hayagrivasinternationalsch9143?si=0OnRQuccaTjtoBR2"
+            target="_blank"
+            title="YouTube"
+            style="font-size: 24px"
+            >▶</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+      const reveals = document.querySelectorAll(".section, .card");
+
+      window.addEventListener("scroll", () => {
+        const trigger = window.innerHeight * 0.85;
+
+        reveals.forEach((el) => {
+          const top = el.getBoundingClientRect().top;
+          if (top < trigger) {
+            el.style.opacity = 1;
+            el.style.transform = "translateY(0)";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

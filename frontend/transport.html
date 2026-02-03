@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transport Routes</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="news-bar">
+        <div class="news-track">
+            <span>📢 🏆 100% CBSE Results | 🎉 Annual Sports Day Highlights | 🚌 New Transport Routes Added | CBSE
+                Affiliation No: 1930677 | ISA Award School &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>📢 🏆 100% CBSE Results | 🎉 Annual Sports Day Highlights | 🚌 New Transport Routes Added | CBSE
+                Affiliation No: 1930677 | ISA Award School &nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <img src="../assets/media/logo.png" class="logo">
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html" class="btn" style="margin-left: 20px; padding: 8px 20px; margin-top:0;">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Transport Routes</h2>
+        <div class="cards">
+            <div class="card">Route 1 – Sivakasi Town</div>
+            <div class="card">Route 2 – Srivilliputhur</div>
+            <div class="card">Route 3 – Virudhunagar</div>
+            <div class="card">GPS Tracking Available</div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917373744882" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <footer>© 2026 Hayagrivas International School</footer>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        const reveals = document.querySelectorAll(".section, .card");
+
+        window.addEventListener("scroll", () => {
+            const trigger = window.innerHeight * 0.85;
+
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < trigger) {
+                    el.style.opacity = 1;
+                    el.style.transform = "translateY(0)";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Principal Message</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="news-bar">
+      <div class="news-track">
+        <span
+          >📢 🏆 100% CBSE Results | CBSE Affiliation No: 1930677 | ISA Award
+          School &nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span
+          >📢 🏆 100% CBSE Results | CBSE Affiliation No: 1930677 | ISA Award
+          School &nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+      </div>
+    </div>
+
+    <header class="navbar sticky-nav">
+      <div class="nav-container centered-nav">
+        <nav class="nav-menu">
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Principal’s Message</h2>
+      <div class="card" style="max-width: 900px; margin: auto">
+        <!-- Using logo as placeholder if principal.jpg doesn't exist, user can replace -->
+        <img
+          src="assets/images/hayagrivas_logo_final.png"
+          style="
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #f97316;
+          "
+        />
+        <p style="font-size: 18px; line-height: 1.6; font-style: italic">
+          “At Hayagrivas International School, we believe education is not just
+          about marks, but about building confidence, character and leadership.
+          Our mission is to nurture students into responsible global citizens.”
+        </p>
+        <h4 style="margin-top: 20px; color: #0c4a6e; font-size: 22px">
+          — Mrs. J. Priya, Principal
+        </h4>
+      </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917373744882" target="_blank" class="whatsapp-float">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+      />
+    </a>
+
+    <footer>
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.6819253698877!2d77.75937!3d9.129166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0612234b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sHayagrivas%20International%20School!5e0!3m2!1sen!2sin!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="footer-details">
+        <p>© 2026 Hayagrivas International School | Sivakasi</p>
+        <p>📞 +91 73737 44882 | ✉ admin@hayagrivascbse.com</p>
+        <div
+          style="
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+          "
+        >
+          <a href="#" title="Facebook" style="font-size: 24px">f</a>
+          <a href="#" title="Instagram" style="font-size: 24px">📷</a>
+          <a
+            href="https://youtube.com/@hayagrivasinternationalsch9143?si=0OnRQuccaTjtoBR2"
+            target="_blank"
+            title="YouTube"
+            style="font-size: 24px"
+            >▶</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script>
+      const reveals = document.querySelectorAll(".section, .card");
+
+      window.addEventListener("scroll", () => {
+        const trigger = window.innerHeight * 0.85;
+
+        reveals.forEach((el) => {
+          const top = el.getBoundingClientRect().top;
+          if (top < trigger) {
+            el.style.opacity = 1;
+            el.style.transform = "translateY(0)";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

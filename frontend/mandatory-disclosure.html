@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mandatory Disclosure | Hayagrivas International School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="news-bar">
+        <div class="news-track">
+            <span>📢 🏆 100% CBSE Results | 🎉 Annual Sports Day Highlights | 🚌 New Transport Routes Added | CBSE
+                Affiliation No: 1930677 | ISA Award School &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>📢 🏆 100% CBSE Results | 🎉 Annual Sports Day Highlights | 🚌 New Transport Routes Added | CBSE
+                Affiliation No: 1930677 | ISA Award School &nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <img src="assets/media/logo.png" class="logo">
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+
+                <a href="academics.html">Academics</a>
+
+                <div class="dropdown">
+                    <div class="dropbtn">Campus <i class="fa-solid fa-chevron-down" style="font-size: 0.8em;"></i></div>
+                    <div class="dropdown-content">
+                        <a href="facilities.html">Facilities</a>
+                        <a href="infrastructure.html">Infrastructure</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </div>
+
+                <a href="student-life.html">Student Life</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+            <button class="mobile-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span>Compliance</span>
+                <h2>Mandatory Public Disclosure</h2>
+            </div>
+
+            <div style="overflow-x:auto">
+                <table style="width:100%;border-collapse:collapse;background:white;">
+                    <tr style="background:#f1f5f9">
+                        <th style="padding:12px">S.No</th>
+                        <th style="padding:12px">Document</th>
+                        <th style="padding:12px">Link</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>CBSE Affiliation Certificate</td>
+                        <td>View</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Trust Registration Certificate</td>
+                        <td>View</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>NOC from State Government</td>
+                        <td>View</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Fire Safety Certificate</td>
+                        <td>View</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Building Safety Certificate</td>
+                        <td>View</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p>© 2026 Hayagrivas International School | Sivakasi</p>
+            <p>📞 +91 73737 44882 | ✉ admin@hayagrivascbse.com</p>
+            <div style="margin-top:10px;">
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917373744882" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const reveals = document.querySelectorAll(".section, .card");
+
+        window.addEventListener("scroll", () => {
+            const trigger = window.innerHeight * 0.85;
+
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < trigger) {
+                    el.style.opacity = 1;
+                    el.style.transform = "translateY(0)";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

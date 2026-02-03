@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== SCROLL PROGRESS BAR ===== -->
+    <div id="scrollBar"></div>
+
+    <div class="news-bar">
+        <div class="news-track">
+            <span>📢 🏆 100% CBSE Results | 🎉 Annual Sports Day Highlights | 🚌 New Transport Routes Added | CBSE
+                Affiliation No: 1930677 | ISA Award School &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>📢 🏆 100% CBSE Results | 🎉 Annual Sports Day Highlights | 🚌 New Transport Routes Added | CBSE
+                Affiliation No: 1930677 | ISA Award School &nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <img src="../assets/media/logo.png" class="logo">
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="../admission-form.html">Apply Online</a>
+                <a href="../fees.html">Fee Payment</a>
+                <a href="../alumni.html">Alumni</a>
+                <a href="../parent-portal.html">Parent Portal</a>
+                <a href="../transport.html">Transport</a>
+                <a href="../library.html">Digital Library</a>
+                <a href="../chatbot.html">AI Help</a>
+                <a href="../exam-portal.html">Online Exam</a>
+                <a href="../homework.html">Homework Upload</a>
+                <a href="login.html" class="btn" style="margin-left: 20px; padding: 8px 20px; margin-top:0;">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 6. VIDEO + PHOTO GALLERY MIX -->
+    <section class="section reveal">
+        <h2>Campus Life</h2>
+        <div class="gallery">
+            <img src="../assets/images/jee.png" alt="JEE Result" class="gallery-img">
+            <img src="../assets/images/neet achivers.jpg" alt="NEET Result" class="gallery-img">
+            <img src="../assets/images/silambam.png" alt="Silambam Event" class="gallery-img">
+            <img src="../assets/images/sports_field_view.png" alt="Campus View" class="gallery-img">
+            <img src="../assets/images/sports_meet_stage.png" alt="Sports Meet Stage" class="gallery-img">
+            <img src="../assets/images/sports_meet_students.png" alt="Sports Meet Students" class="gallery-img">
+            <img src="../assets/images/trophy_presentation.png" alt="Trophy Presentation" class="gallery-img">
+            <img src="../assets/images/event_guests.png" alt="Event Guests" class="gallery-img">
+        </div>
+        <div style="text-align: center; margin-top: 20px; color: #666;">
+            <p>*(Click on images to view full screen)*</p>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917373744882" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- Premium Effects Markup -->
+    <div class="cursor-glow"></div>
+    <a href="../admission-form.html" class="floating-apply">Apply Now</a>
+
+    <!-- 9. FOOTER UPGRADE -->
+    <footer>
+        <p>© 2026 Hayagrivas International School | Sivakasi</p>
+        <p>📞 +91 73737 44882 | ✉ admin@hayagrivascbse.com</p>
+        <div style="margin-top:10px;">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">YouTube</a>
+        </div>
+    </footer>
+
+    <!-- 🖼 2️⃣ GALLERY LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-img">
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // LIGHTBOX LOGIC
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        document.querySelectorAll(".gallery-img").forEach(img => {
+            img.onclick = () => {
+                lightbox.style.display = "flex";
+                lightboxImg.src = img.src;
+            }
+        });
+
+        lightbox.onclick = () => {
+            lightbox.style.display = "none";
+        };
+    </script>
+</body>
+
+</html>
