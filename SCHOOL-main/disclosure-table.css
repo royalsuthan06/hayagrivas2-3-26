@@ -1,0 +1,42 @@
+/* Disclosure Table */
+.disclosure-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.disclosure-table th,
+.disclosure-table td {
+    padding: 15px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.disclosure-table th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+.disclosure-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.doc-link {
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.doc-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+

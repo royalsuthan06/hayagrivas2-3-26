@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alumni | Hayagrivas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="news-bar">
+        <div class="news-track">
+            <span>?? ?? 100% CBSE Results | ?? Annual Sports Day Highlights | ?? New Transport Routes Added | CBSE
+                Affiliation No: 1930677 | ISA Award School &nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>?? ?? 100% CBSE Results | ?? Annual Sports Day Highlights | ?? New Transport Routes Added | CBSE
+                Affiliation No: 1930677 | ISA Award School &nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <img src="logo.png" class="logo">
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="admission-form.html">Apply Online</a>
+                <a href="fees.html">Fee Payment</a>
+                <a href="alumni.html">Alumni</a>
+                <a href="parent-portal.html">Parent Portal</a>
+                <a href="transport.html">Transport</a>
+                <a href="library.html">Digital Library</a>
+                <a href="chatbot.html">AI Help</a>
+                <a href="exam-portal.html">Online Exam</a>
+                <a href="homework.html">Homework Upload</a>
+                <a href="login.html" class="btn" style="margin-left: 20px; padding: 8px 20px; margin-top:0;">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Our Proud Alumni</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="logo.png" style="width:100%;border-radius:10px;">
+                <h3>Dr. Vignesh</h3>
+                <p>AI Research Scientist, USA</p>
+            </div>
+
+            <div class="card">
+                <img src="logo.png" style="width:100%;border-radius:10px;">
+                <h3>Ms. Priyanka</h3>
+                <p>IAS Officer</p>
+            </div>
+
+            <div class="card">
+                <img src="logo.png" style="width:100%;border-radius:10px;">
+                <h3>Mr. Arjun</h3>
+                <p>Entrepreneur & Startup Founder</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Hayagrivas International School | Sivakasi</p>
+        <p>?? +91 73737 44882 | ? admin@hayagrivascbse.com</p>
+        <div style="margin-top:10px;">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">YouTube</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const reveals = document.querySelectorAll(".section, .card");
+
+        window.addEventListener("scroll", () => {
+            const trigger = window.innerHeight * 0.85;
+
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < trigger) {
+                    el.style.opacity = 1;
+                    el.style.transform = "translateY(0)";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+
