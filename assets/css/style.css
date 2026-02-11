@@ -2030,7 +2030,8 @@ img {
 
 .whatsapp-float {
     position: fixed;
-    bottom: 30px;
+    bottom: 110px;
+    /* Moved up above the new Apply Now position */
     right: 30px;
     width: 60px;
     height: 60px;
@@ -2047,6 +2048,17 @@ img {
     animation: whatsappPulse 2s infinite;
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        bottom: 85px;
+        /* Adjusted to stack above Apply Now on mobile */
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
 }
 
 .whatsapp-float.hidden {

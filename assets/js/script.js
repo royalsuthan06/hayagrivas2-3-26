@@ -108,16 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        // WhatsApp button behavior - hide on scroll down, show on scroll up
-        if (whatsappButton) {
-          if (currentScrollY > lastScrollY && currentScrollY > 100) {
-            // Scrolling down & past 100px
-            whatsappButton.classList.add("hidden");
-          } else {
-            // Scrolling up or at top
-            whatsappButton.classList.remove("hidden");
-          }
-        }
+        // WhatsApp button is now permanently visible as per user request
+
 
         lastScrollY = currentScrollY;
         ticking = false;

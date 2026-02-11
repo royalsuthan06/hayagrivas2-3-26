@@ -2,15 +2,18 @@
 .apply-now-btn {
   position: fixed;
   right: 20px;
-  bottom: 100px; /* Moved up from 20px */
+  bottom: 30px;
+  /* At the old WhatsApp position */
   z-index: 99999;
   background: linear-gradient(135deg, #8e44ad 0%, #3498db 100%);
   color: #ffffff;
-  padding: 12px 18px;
+  padding: 16px 28px;
+  /* Slightly more padding for the larger font */
   border-radius: 50px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
+  /* Increased font size as requested */
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -29,8 +32,8 @@
 @media (max-width: 600px) {
   .apply-now-btn {
     right: 14px;
-    bottom: 90px; /* Moved up from 14px */
-    padding: 10px 14px;
-    font-size: 0.9rem;
+    bottom: 20px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
   }
 }
