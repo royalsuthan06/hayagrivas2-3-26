@@ -2,7 +2,7 @@
 .apply-now-btn {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 100px; /* Moved up from 20px */
   z-index: 99999;
   background: linear-gradient(135deg, #8e44ad 0%, #3498db 100%);
   color: #ffffff;
@@ -29,7 +29,7 @@
 @media (max-width: 600px) {
   .apply-now-btn {
     right: 14px;
-    bottom: 14px;
+    bottom: 90px; /* Moved up from 14px */
     padding: 10px 14px;
     font-size: 0.9rem;
   }
