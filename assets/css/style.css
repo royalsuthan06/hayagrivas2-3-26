@@ -1320,14 +1320,33 @@ img {
     margin-top: 60px;
     padding-top: 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    /* Bottom break line */
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    /* Align to bottom */
+    gap: 30px;
+}
+
+.footer-bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-bottom-right {
+    display: flex;
     align-items: center;
+    gap: 25px;
+}
+
+.designer-credit {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-bottom p {
     font-size: 0.95rem;
+    margin: 0;
 }
 
 .social-links {
@@ -2079,6 +2098,13 @@ img {
 
 .whatsapp-float:hover i {
     transform: rotate(360deg);
+}
+
+/* Hide floating elements if they interfere with footer */
+.footer-active .whatsapp-float,
+.footer-active .apply-now-btn {
+    opacity: 0;
+    pointer-events: none;
 }
 
 @keyframes whatsappPulse {

@@ -137,6 +137,22 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 
+  // Footer Observer - To hide floating buttons when footer is in view
+  const footerObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        document.body.classList.add("footer-active");
+      } else {
+        document.body.classList.remove("footer-active");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  const footerEl = document.querySelector(".footer");
+  if (footerEl) {
+    footerObserver.observe(footerEl);
+  }
+
   // Smooth Scroll for Navigation
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
