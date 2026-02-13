@@ -211,9 +211,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Close menu when a link is clicked
     navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        mobileBtn.classList.remove("active");
-        navLinks.classList.remove("active");
+      link.addEventListener("click", (e) => {
+        const isDropdownToggle = link.classList.contains("dropdown-toggle");
+        const isMobile = window.innerWidth <= 768;
+
+        if (isMobile && isDropdownToggle) {
+          e.preventDefault();
+          const parent = link.closest(".dropdown");
+          if (parent) {
+            parent.classList.toggle("active");
+          }
+        } else {
+          mobileBtn.classList.remove("active");
+          navLinks.classList.remove("active");
+          // Reset all dropdowns when closing menu
+          navLinks.querySelectorAll(".dropdown").forEach(d => d.classList.remove("active"));
+        }
       });
     });
   }
